@@ -1,22 +1,16 @@
 :root {
-  --page-1-color: rgb(32, 31, 31);
   --animation-speed: 2s;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
-  color: #fff;
+  color: white;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 /*Page styles*/
-
-#page-1 {
-  background: var(--page-1-color);
-  animation: color 10s;
-}
 
 .page {
   display: flex;
@@ -58,10 +52,5 @@ body {
 @keyframes text {
   to {
     transform: translateX(0);
-  }
-}
-@keyframes color {
-  to {
-    background: rgb(104, 101, 101);
   }
 }
