@@ -1,0 +1,67 @@
+:root {
+  --page-1-color: rgb(32, 31, 31);
+  --animation-speed: 2s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/*Page styles*/
+
+#page-1 {
+  background: var(--page-1-color);
+  animation: color 10s;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 2rem;
+}
+
+/*Page animation*/
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animation-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-2500px);
+  animation: text var(--animation-speed) forwards ease-in 1s;
+}
+
+/*Keyframes*/
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes text {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes color {
+  to {
+    background: rgb(104, 101, 101);
+  }
+}
