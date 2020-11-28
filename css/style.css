@@ -1,16 +1,16 @@
 h1 {
   color: white;
   animation-name: heading1;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 #heading {
   color: orange;
   animation-name: heading2;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 @keyframes heading1 {
