@@ -126,7 +126,7 @@
         <button class="btn btn-dark mb-2 btn-block" type="submit">Submit form</button>
       </div>
       <div>
-        <button class="btn btn-warning btn-block" type="reset">Refresh form</button>
+        <button class="btn btn-warning btn-block" type="button" onclick="reLoad()">Refresh form</button>
       </div>
     </form>   
   </div> 
@@ -180,7 +180,11 @@
       }, false);
     })();
 
-  
+    // Reset Button Reload page
+      function reLoad() {
+        location.reload();
+        return false;
+      }
     </script>
 </body>
 </html>
