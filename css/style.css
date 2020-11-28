@@ -1,0 +1,32 @@
+h1 {
+  color: white;
+  animation-name: heading1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+#heading {
+  color: orange;
+  animation-name: heading2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes heading1 {
+  from {
+    color: white;
+  }
+  to {
+    color: orange;
+  }
+}
+
+@keyframes heading2 {
+  from {
+    color: orange;
+  }
+  to {
+    color: white;
+  }
+}
